@@ -78,6 +78,5 @@ public class Producto implements Serializable {
 		this.nombre = nombre;
 	}
 
-
 	private static final long serialVersionUID = 1L;
 }

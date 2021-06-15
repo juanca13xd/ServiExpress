@@ -13,9 +13,9 @@ public class Categoria implements Serializable {
 	private String nombre;
 
 	public Categoria() {
-		
+
 	}
-	
+
 	public Categoria(int id_categoria, String nombre) {
 		super();
 		this.id_categoria = id_categoria;
@@ -38,6 +38,6 @@ public class Categoria implements Serializable {
 		this.nombre = nombre;
 	}
 
-
 	private static final long serialVersionUID = 1L;
+
 }

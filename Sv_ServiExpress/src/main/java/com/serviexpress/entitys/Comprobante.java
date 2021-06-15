@@ -52,6 +52,7 @@ public class Comprobante implements Serializable {
 
 	public Date getFecha_emision() {
 		return fecha_emision;
+
 	}
 
 	public void setFecha_emision(Date fecha_emision) {
@@ -91,4 +92,5 @@ public class Comprobante implements Serializable {
 	}
 
 	private static final long serialVersionUID = 1L;
+
 }

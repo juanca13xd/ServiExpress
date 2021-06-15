@@ -2,9 +2,6 @@ package com.serviexpress.entitys;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-
-
 public class Detalle_comprobante implements Serializable {
 
 	private int detalle_com;
@@ -37,4 +34,6 @@ public class Detalle_comprobante implements Serializable {
 	}
 
 	private static final long serialVersionUID = 1L;
+
+
 }
