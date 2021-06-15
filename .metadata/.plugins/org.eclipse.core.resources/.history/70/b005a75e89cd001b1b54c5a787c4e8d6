@@ -1,0 +1,15 @@
+package com.serviexpress.entitys;
+
+import java.io.Serializable;
+
+public class Categoria implements Serializable{
+
+
+	private int id_categoria;
+	private String nombre;
+
+	
+	
+	
+	private static final long serialVersionUID = 1L;
+}

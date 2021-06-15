@@ -1,0 +1,19 @@
+package com.serviexpress.entitys;
+
+import java.util.Date;
+
+public class Cliente {
+
+	private int id_cliente;
+	private String nombre;
+	private String apellido;
+	private String documento_identidad;
+	private String celular;
+	private String direccion;
+	private String correo;
+	private Date fecha_registro;
+	private String username;
+	private String password;
+	
+	
+}

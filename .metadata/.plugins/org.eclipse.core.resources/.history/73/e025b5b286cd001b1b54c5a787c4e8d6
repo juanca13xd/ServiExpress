@@ -1,0 +1,7 @@
+package com.serviexpress.entitys;
+
+public class Marca {
+
+	private int id_marca;
+	private String nombre;
+}

@@ -1,0 +1,8 @@
+package com.serviexpress.entitys;
+
+public class Producto {
+
+	private int id_categoria;
+	private String nombre;
+
+}

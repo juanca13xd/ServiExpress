@@ -1,0 +1,9 @@
+package com.serviexpress.entitys;
+
+public class Detalle_comprobante {
+
+	private int detalle_com;
+	private int cantidad;
+	
+	
+}

@@ -1,0 +1,15 @@
+package com.serviexpress.entitys;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class Comprobante implements Serializable {
+
+	private int id_comprobante;
+	private String tipo_documento;
+	private Date fecha_emision;
+	private double subtotal;
+	private double igv;
+	private double total;
+	private String metodo_pago;
+}

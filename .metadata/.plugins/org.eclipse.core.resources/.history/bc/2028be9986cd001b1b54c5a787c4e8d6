@@ -1,0 +1,8 @@
+package com.serviexpress.entitys;
+
+public class Categoria {
+	
+	private int id_marca;
+	private String nombre;
+
+}

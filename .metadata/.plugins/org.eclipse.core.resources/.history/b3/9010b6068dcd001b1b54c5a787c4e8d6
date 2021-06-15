@@ -1,0 +1,7 @@
+package com.serviexpress.entitys;
+
+public class Rol {
+
+	private int id_rol;
+	private String nombre;
+}

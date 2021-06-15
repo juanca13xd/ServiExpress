@@ -1,0 +1,17 @@
+package com.serviexpress.entitys;
+
+import java.io.Serializable;
+
+public class Producto implements Serializable{
+
+	
+	private int id_producto;
+	private double precio;
+	private int stock;
+	private String descripcion;
+	private String imagen;
+	private String nombre;
+
+	
+	private static final long serialVersionUID = 1L;
+}
