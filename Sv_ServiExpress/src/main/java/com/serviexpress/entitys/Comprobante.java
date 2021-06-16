@@ -3,20 +3,59 @@ package com.serviexpress.entitys;
 import java.io.Serializable;
 import java.util.Date;
 
+
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.PrePersist;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
+import ch.qos.logback.core.joran.spi.NoAutoStart;
+
+
+
 
 @Entity
 @Table(name = "comprobante")
 public class Comprobante implements Serializable {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id_comprobante;
+
+	
 	private String tipo_documento;
+
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date fecha_emision;
+
+	@NotNull
 	private double subtotal;
+
+	@NotNull
 	private double igv;
+
+	@NotNull
 	private double total;
+
+	@NotEmpty
 	private String metodo_pago;
+
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	private Cliente cliente;
+	
+	@PrePersist
+	public void prePersist() {
+		fecha_emision= new Date();
+	}
 
 	public Comprobante() {
 
